@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fortune of the Day</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="main-container">
+      <h1>Fortune of the Day</h1>
+        <div class="fortune-container">
+            <div class="bordered fortune-box">
+                <p class="fortune-text">{{ fortune }}</p>
+            </div>
+        </div>
+        <div class="summary-container">
+            <div class="bordered summary-box">
+                <p class="summary-text">This is a basic python flask web application which is hosted on an AWS EC2 instance, in an autoscaling group, load balanced across multiple availability zones. This application was created to demonstrate my abilities with different AWS technologies. The application retrieves data from a basic aws dynamo database upon each load, and displays it on the page. This application was created from aws modules that are entirely managed using terraform configuration files. This includes everything from the VPC, to instance, to DNS configurations and more. Please see <a href="https://github.com/SystemDylan/terraform-aws">Github</a> for more details</p>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
