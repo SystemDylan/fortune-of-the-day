@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SQL Fortune of the Day</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="main-container">
+      <h1>SQL Fortune of the Day</h1>
+        <div class="fortune-container">
+            <div class="bordered fortune-box">
+                <p class="fortune-text">{{ fortune }}</p>
+            </div>
+        </div>
+        <div class="summary-container">
+            <div class="bordered summary-box">
+                <p class="summary-text">This is a reworked version of a basic Python Flask web application, hosted on an AWS EC2 instance within an autoscaling group, and load balanced across multiple availability zones. The purpose of this rework is to showcase my abilities in adapting and managing different technologies, including a transition from AWS DynamoDB to a local MySQL server hosted in a Proxmox LXC container. Reworking the application required setup of a new SQL database on a local environment, and facilitating an IPsec vpn connection between the local network and the AWS VPC in order for the application to communicate with the DB.  Both the original and reworked applications are created using Terraform configuration files, managing every aspect of the infrastructure from the VPC,VPN, instances, DNS configurations, and more. To see the original application and learn more about the setup, please visit the original site <a href="http://fortune.systemdylan.com/">here</a>. For more details on the application, its rework, and the underlying technologies, please refer to the project's <a href="https://github.com/SystemDylan/terraform-aws">Github</a> repository.</p>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
