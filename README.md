@@ -16,8 +16,8 @@ A simple Python Flask web application designed to showcase proficiency in AWS te
 
 ## SQL Fortune of the Day
 
--A rebuilt version of the 'fortune of the day' python flask app. Uses a locally hosted MySQL DB instead of an Amazon Dynamo DB
--The application now contacts a SQL database over an Ipsec VPN facilitated between a pfsense firewall and an aws vpc virtual private gateway. All aws vpc and vpc infrastructure was generated and is managed with terraform. The terraform scripts for the environment can be viewed at my terraform-aws repo: https://github.com/SystemDylan/terraform-aws
+- A rebuilt version of the 'fortune of the day' python flask app. Uses a locally hosted MySQL DB instead of an Amazon Dynamo DB
+- The application now contacts a SQL database over an Ipsec VPN facilitated between a pfsense firewall and an aws vpc virtual private gateway. All aws vpc and vpc infrastructure was generated and is managed with terraform. The terraform scripts for the environment can be viewed at my terraform-aws repo: https://github.com/SystemDylan/terraform-aws
 
 ## Upcoming Features
 
