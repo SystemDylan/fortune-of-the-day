@@ -12,12 +12,12 @@ A simple Python Flask web application designed to showcase proficiency in AWS te
 - Elastic Load Balancer (ELB) handles load balancing across multiple availability zones and acts as a reverse proxy, accepting connections on port 80 and routing to port 5000, where the Flask app listens
 - Entire application state created and managed using Terraform
 - Terraform configuration file for ELB/ASG automatically deploys a Route 53 CNAME DNS record pointing to the ELB's DNS name
-- Access the web app at http://fortune.systemdylan.com/
+- Access the web app at http://fortune.systemdylan.com/ (site is down temporarily due to aws costs)
 
 ## SQL Fortune of the Day
 
 - A rebuilt version of the 'fortune of the day' python flask app. Uses a locally hosted MySQL DB instead of an Amazon Dynamo DB
-- The application now contacts a SQL database over an Ipsec VPN facilitated between a pfsense firewall and an aws vpc virtual private gateway. All aws vpc and vpc infrastructure was generated and is managed with terraform. The terraform scripts for the environment can be viewed at my terraform-aws repo: https://github.com/SystemDylan/terraform-aws
+- The application now contacts a SQL database over an Ipsec VPN facilitated between a pfsense firewall and an aws vpc virtual private gateway. All aws vpc and vpc infrastructure was generated and is managed with terraform. The terraform scripts for the environment can be viewed at my terraform-aws repo: https://github.com/SystemDylan/terraform-aws (site is down temporarily due to aws costs)
 
 ## Upcoming Features
 
